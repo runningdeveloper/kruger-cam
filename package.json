@@ -1,0 +1,24 @@
+{
+  "name": "kruger-cam",
+  "version": "1.0.0",
+  "description": "This might be a dumb idea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runningdeveloper/kruger-cam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/runningdeveloper/kruger-cam/issues"
+  },
+  "homepage": "https://github.com/runningdeveloper/kruger-cam#readme",
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.2.1",
+    "@tensorflow/tfjs-node": "^2.8.2",
+    "node-fetch": "^2.6.1"
+  }
+}
