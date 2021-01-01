@@ -5,8 +5,10 @@ const fetch = require('node-fetch');
 let model = null;
 
 const webcams = [
-    'https://www.sanparks.org/webcams/highlights/addo.jpg?',
-    // 'https://www.sanparks.org/webcams/highlights/satara.jpg'
+    'https://www.sanparks.org/webcams/addo.jpg',
+    'https://www.sanparks.org/webcams/nossob.jpg',
+    'https://www.sanparks.org/webcams/orpen.jpg',
+    'https://www.sanparks.org/webcams/satara.jpg'
 ]
 // from https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/src/classes.ts
 const animals = [ 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'zebra', 'giraffe', 'mouse']
