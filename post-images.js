@@ -39,6 +39,8 @@ if(botToken === undefined || chatId === undefined){
           console.log('cannot send', {error})
         }
     })
+  }else{
+    console.log('no images to send')
   }
 
 })();

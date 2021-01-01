@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 let model = null;
 
 const webcams = [
-    'https://www.sanparks.org/webcams/highlights/orpen.jpg',
+    'https://www.sanparks.org/webcams/highlights/addo.jpg?',
     // 'https://www.sanparks.org/webcams/highlights/satara.jpg'
 ]
 // from https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/src/classes.ts
