@@ -8,11 +8,12 @@ const webcams = [
     'https://www.sanparks.org/webcams/addo.jpg',
     'https://www.sanparks.org/webcams/nossob.jpg',
     'https://www.sanparks.org/webcams/orpen.jpg',
-    'https://www.sanparks.org/webcams/satara.jpg'
+    'https://www.sanparks.org/webcams/satara.jpg',
+    'https://www.sanparks.org/webcams/punda.jpg'
 ]
 // from https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/src/classes.ts
 const animals = [ 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'zebra', 'giraffe', 'mouse']
-const threshold = 0.7 
+const threshold = 0.65 
 
 async function asyncForEach(array, callback) {
   for (let index = 0; index < array.length; index++) {
