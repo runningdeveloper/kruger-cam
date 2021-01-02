@@ -2,6 +2,7 @@ const tf = require("@tensorflow/tfjs-node");
 const cocoSsd = require("@tensorflow-models/coco-ssd");
 const fs = require("fs");
 const fetch = require('node-fetch');
+const sizeOf = require('image-size');
 let model = null;
 
 const webcams = [
@@ -24,8 +25,9 @@ async function asyncForEach(array, callback) {
 const doImagePrediction = async (image) => {
   const img = tf.node.decodeImage(image);
   const predictions = await model.detect(img);
-
+    
   if (predictions && predictions.length > 0) {
+    console.log('raw predictions amount', predictions.length);
     return predictions
   }
 
@@ -43,13 +45,16 @@ const doPredictionOnWebcam = async (url) => {
     }
 
     const buffer = await response.buffer();
+    if(sizeOf(buffer).height===308 && sizeOf(buffer).width===384){
+        console.log('Webcam error image', url)
+        return
+    }
+    
     const prediction = await doImagePrediction(buffer)
     if(prediction){
         const anyAnimals = filterAnimals(prediction)
-        // remove the error image
-        const isError = (anyAnimals && anyAnimals[0] && anyAnimals[0].class === 'sheep' && anyAnimals[0].bbox[0] === -2.200847625732422 && anyAnimals[0].bbox[1] === 61.58217966556549 && anyAnimals[0].bbox[2] === 182.88819122314453);
-        
-        if(anyAnimals && anyAnimals.length>0 && !isError){
+
+        if(anyAnimals && anyAnimals.length>0){
             console.log('got animals', {anyAnimals})
             fs.writeFileSync(`results/${Date.now()}.jpg`, buffer);
         }
