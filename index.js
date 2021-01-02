@@ -47,7 +47,7 @@ const doPredictionOnWebcam = async (url) => {
     if(prediction){
         const anyAnimals = filterAnimals(prediction)
         // remove the error image
-        const isError = (anyAnimals && anyAnimals[0].class === 'sheep' && anyAnimals[0].bbox[0] === -2.200847625732422 && anyAnimals[0].bbox[1] === 61.58217966556549 && anyAnimals[0].bbox[2] === 182.88819122314453);
+        const isError = (anyAnimals && anyAnimals[0] && anyAnimals[0].class === 'sheep' && anyAnimals[0].bbox[0] === -2.200847625732422 && anyAnimals[0].bbox[1] === 61.58217966556549 && anyAnimals[0].bbox[2] === 182.88819122314453);
         
         if(anyAnimals && anyAnimals.length>0 && !isError){
             console.log('got animals', {anyAnimals})
