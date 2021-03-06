@@ -2,7 +2,7 @@
 
 So I thought I could do some game watching without the effort. The South African National Parks service (SANParks) has a few webcams at the watering holes. Link is [www.sanparks.org/webcams/](https://www.sanparks.org/webcams/). They don't really have live video feed (seems to be offline) but have still cameras which put out a jpg image every few seconds. So I basically wired up the coco tensorflow example object detection to look at these still cameras. Then if animals are seen it sends me an image.
 
-See some results [here](best/some-results.md)
+See some results [here](eg/some-results.md)
 
 This idea started when we were in lockdown as SANParks were promoting the cameras on social media while you couldn't travel.
 
