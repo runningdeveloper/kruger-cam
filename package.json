@@ -21,6 +21,7 @@
     "@tensorflow/tfjs-node": "^2.8.2",
     "form-data": "^3.0.0",
     "image-size": "^0.9.3",
+    "jsonfile": "^6.1.0",
     "node-fetch": "^2.6.1"
   }
 }
