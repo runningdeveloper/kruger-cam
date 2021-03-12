@@ -33,7 +33,7 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.lock') }}
 
-      - run: npm ci
+      - run: npm install
 
       - run: node index.js
 
