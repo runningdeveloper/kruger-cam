@@ -21,34 +21,42 @@ if (botToken === undefined || chatId === undefined) {
 }
 
 (async function() {
-  const results = await jsonfile.readFile(resultsFile);
+  try {
+    const results = await jsonfile.readFile(resultsFile);
 
-  console.log({ results });
+    console.log({ results });
 
-  // const images = fs.readdirSync("results");
+    // const images = fs.readdirSync("results");
 
-  if (results.length > 0) {
-    asyncForEach(results, async (result) => {
-      const formData = new FormData();
-      formData.append("chat_id", chatId);
-      formData.append(
-        "caption",
-        `${result.name} sighting! Link: ${result.url}`
-      );
-      formData.append("disable_notification", "true");
-      formData.append("photo", fs.createReadStream(`results/${result.image}`));
+    if (results.length > 0) {
+      asyncForEach(results, async (result) => {
+        const formData = new FormData();
+        formData.append("chat_id", chatId);
+        formData.append(
+          "caption",
+          `${result.name} sighting! Link: ${result.url}`
+        );
+        formData.append("disable_notification", "true");
+        formData.append(
+          "photo",
+          fs.createReadStream(`results/${result.image}`)
+        );
 
-      try {
-        await fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
-          method: "POST",
-          body: formData,
-        });
-        console.log("sent: ", result);
-      } catch (error) {
-        console.log("cannot send", { error });
-      }
-    });
-  } else {
-    console.log("no images to send");
+        try {
+          await fetch(`https://api.telegram.org/bot${botToken}/sendPhoto`, {
+            method: "POST",
+            body: formData,
+          });
+          console.log("sent: ", result);
+        } catch (error) {
+          console.log("cannot send", { error });
+        }
+      });
+    } else {
+      console.log("no images to send");
+    }
+  } catch (error) {
+    console.log("no results file");
+    return;
   }
 })();
