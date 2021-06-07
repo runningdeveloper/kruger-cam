@@ -31,7 +31,7 @@ const webcams = [
   {
     image: "https://www.sanparks.org/webcams/punda.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=punda",
-    name: "Kruger National Park - Punda",
+    name: "Kruger National Park - Punda Maria",
   },
 ];
 // from https://github.com/tensorflow/tfjs-models/blob/master/coco-ssd/src/classes.ts

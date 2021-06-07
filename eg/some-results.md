@@ -29,3 +29,7 @@ I'm not sure if the cameras can be controlled remotely or track movement as some
 ![Zebra](zebra.jpg)
 
 ![Zebra](zebra2.jpg)
+
+![Giraffe](giraffe.jpg)
+
+![Elephants](ele4.jpg)
