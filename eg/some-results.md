@@ -33,3 +33,13 @@ I'm not sure if the cameras can be controlled remotely or track movement as some
 ![Giraffe](giraffe.jpg)
 
 ![Elephants](ele4.jpg)
+
+![Elephants](ele5.jpg)
+
+![Buck fight](buckfight.jpg)
+
+![many animals](mix.jpg)
+
+![many animals](many-buck.jpg)
+
+![buffalo](buffalo.jpg)

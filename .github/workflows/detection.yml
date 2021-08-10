@@ -44,3 +44,9 @@ jobs:
 
       - name: send images
         run: node post-images.js ${{ secrets.TELEGRAM_BOT_TOKEN }} ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Deploy a latest to url
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./results
