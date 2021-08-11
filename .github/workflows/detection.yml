@@ -44,9 +44,15 @@ jobs:
       #     path: results/
 
       - name: send images
-        run: node post-images.js ${{ secrets.TELEGRAM_BOT_TOKEN }} ${{ secrets.TELEGRAM_CHAT_ID }}
+        id: sendimg
+        run: OUTPUT=$(node post-images.js ${{ secrets.TELEGRAM_BOT_TOKEN }} ${{ secrets.TELEGRAM_CHAT_ID }}) && echo "::set-output name=OUTPUT::$OUTPUT"
+
+      - name: build website
+        if: steps.sendimg.outputs.OUTPUT != "no results file"
+        run: node website.js
 
       - name: Deploy a latest to url
+        if: steps.sendimg.outputs.OUTPUT != "no results file"
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
