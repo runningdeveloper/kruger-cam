@@ -1,1 +1,1 @@
-[{"image":"1633186433477.jpg","prediction":[{"bbox":[1356.0563278198242,509.78620290756226,537.5912475585938,315.32439708709717],"class":"dog","score":0.741919219493866}],"url":"https://www.sanparks.org/webcams/cams.php?cam=nossob","name":"Kgalagadi Transfrontier Park"}]
+[{"image":"1633247614112.jpg","prediction":[{"bbox":[480.7861328125,-1.1320209503173828,659.4393920898438,401.9176912307739],"class":"elephant","score":0.8005583882331848}],"url":"https://www.sanparks.org/webcams/cams.php?cam=addo","name":"Addo Elephant National Park"}]
