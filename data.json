@@ -1,1 +1,1 @@
-[{"image":"1635850433776.jpg","prediction":[{"bbox":[3.0115890502929688,-5.949697494506836,886.7940139770508,552.8209590911865],"class":"elephant","score":0.8815317749977112}],"url":"https://www.sanparks.org/webcams/cams.php?cam=orpen","name":"Kruger National Park - Orpen"}]
+[{"image":"1635857333728.jpg","prediction":[{"bbox":[1511.8976211547852,604.651300907135,143.9257049560547,71.29401683807373],"class":"zebra","score":0.7895427346229553}],"url":"https://www.sanparks.org/webcams/cams.php?cam=nossob","name":"Kgalagadi Transfrontier Park"}]
