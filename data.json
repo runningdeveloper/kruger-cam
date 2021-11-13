@@ -1,1 +1,1 @@
-[{"image":"1636778550631.jpg","prediction":[{"bbox":[652.8682708740234,356.23847007751465,102.48779296875,69.1288948059082],"class":"elephant","score":0.838969349861145}],"url":"https://www.sanparks.org/webcams/cams.php?cam=orpen","name":"Kruger National Park - Orpen"}]
+[{"image":"1636791123255.jpg","prediction":[{"bbox":[1121.0581970214844,78.904709815979,670.8908843994141,525.5928039550781],"class":"cow","score":0.8764144778251648}],"url":"https://www.sanparks.org/webcams/cams.php?cam=satara","name":"Kruger National Park - Satara"}]
