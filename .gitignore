@@ -106,3 +106,5 @@ dist
 results/
 
 .DS_Store
+
+temp/

@@ -9,27 +9,27 @@ let model = null;
 
 const webcams = [
   {
-    image: "https://www.sanparks.org/webcams/addo.jpg",
+    image: "https://celtis.sanparks.org/webcams/addo.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=addo",
     name: "Addo Elephant National Park",
   },
   {
-    image: "https://www.sanparks.org/webcams/nossob.jpg",
+    image: "https://celtis.sanparks.org/webcams/nossob.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=nossob",
     name: "Kgalagadi Transfrontier Park",
   },
   {
-    image: "https://www.sanparks.org/webcams/orpen.jpg",
+    image: "https://celtis.sanparks.org/webcams/orpen.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=orpen",
     name: "Kruger National Park - Orpen",
   },
   {
-    image: "https://www.sanparks.org/webcams/satara.jpg",
+    image: "https://celtis.sanparks.org/webcams/satara.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=satara",
     name: "Kruger National Park - Satara",
   },
   {
-    image: "https://www.sanparks.org/webcams/punda.jpg",
+    image: "https://celtis.sanparks.org/webcams/punda.jpg",
     url: "https://www.sanparks.org/webcams/cams.php?cam=punda",
     name: "Kruger National Park - Punda Maria",
   },
@@ -59,7 +59,7 @@ const doImagePrediction = async (image) => {
   const predictions = await model.detect(img);
 
   if (predictions && predictions.length > 0) {
-    console.log("raw predictions amount", predictions.length);
+    console.log("raw predictions", predictions);
     return predictions;
   }
 
