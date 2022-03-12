@@ -1,1 +1,1 @@
-[{"image":"1647077386512.jpg","prediction":[{"bbox":[363.86714935302734,318.5466527938843,325.29911041259766,263.1295108795166],"class":"horse","score":0.9387199878692627}],"url":"https://www.sanparks.org/webcams/cams.php?cam=orpen","name":"Kruger National Park - Orpen"}]
+[{"image":"1647082438446.jpg","prediction":[{"bbox":[1107.7625274658203,396.08262062072754,113.8055419921875,90.45533180236816],"class":"elephant","score":0.8544447422027588}],"url":"https://www.sanparks.org/webcams/cams.php?cam=addo","name":"Addo Elephant National Park"}]
