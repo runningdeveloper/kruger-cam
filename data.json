@@ -1,1 +1,1 @@
-[{"image":"1648020582853.jpg","prediction":[{"bbox":[264.3826675415039,7.627413868904114,750.8759307861328,373.34007918834686],"class":"zebra","score":0.8339604735374451}],"url":"https://www.sanparks.org/webcams/cams.php?cam=satara","name":"Kruger National Park - Satara"}]
+[{"image":"1648033810070.jpg","prediction":[{"bbox":[4.779090881347656,3.0829310417175293,621.1654663085938,461.55017137527466],"class":"elephant","score":0.8923954963684082}],"url":"https://www.sanparks.org/webcams/cams.php?cam=addo","name":"Addo Elephant National Park"}]
